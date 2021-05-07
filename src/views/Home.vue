@@ -18,10 +18,10 @@
       <div id="menuDiv" class="menu-non">
         <nav class="menu-nav">
           <ul class="menuul">
-            <li class="item">
+            <router-link to="/about" ><li class="item">
               <span class="label">故事簡介</span>
               <span class="labelEn">Story</span>
-            </li>
+            </li></router-link>
             <li class="item">
               <span class="label">廣播劇聲演</span>
               <span class="labelEn">Voice</span>
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;900&display=swap');
 
@@ -108,6 +108,7 @@ export default {
   color:#fff;
   transition: color 0.5s ease;
 }
+.menuul a{ text-decoration:none;}
 .menuul li:hover{
   color:#deb068;
 }
