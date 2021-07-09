@@ -10,37 +10,8 @@
         <p class="alt">廣播劇</p>
         <p class="alt">Coming Soon</p>
       </div>
-      <div @click="openMenu" class="header__menu menu-btn" id="menu-btn">
-            <span class="menu-btn__bar"></span>
-            <span class="menu-btn__bar"></span>
-            <span class="menu-btn__bar"></span>
-      </div>
-      <div id="menuDiv" class="menu-non">
-        <nav class="menu-nav">
-          <ul class="menuul">
-            <router-link to="/about" ><li class="item">
-              <span class="label">故事簡介</span>
-              <span class="labelEn">Story</span>
-            </li></router-link>
-            <li class="item">
-              <span class="label">廣播劇聲演</span>
-              <span class="labelEn">Voice</span>
-            </li>
-            <li class="item">
-              <span class="label">商品情報</span>
-              <span class="labelEn">Product</span>
-            </li>
-            <li class="item">
-              <span class="label">預購活動</span>
-              <span class="labelEn">Pre-Sale</span>
-            </li>
-            <li class="item">
-              <span class="label">製作介紹</span>
-              <span class="labelEn">Staff</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
+     
+    
   </div>
 </template>
 
@@ -146,6 +117,9 @@ export default {
     z-index: 999;
 }
 .menu-btn {
+    position:absolute;
+    top:0px;
+    right:0px;
     display: inline-block;
     margin-bottom: 4px;
     width: 25px;
@@ -188,7 +162,7 @@ export default {
 }
 .menu-btn.is-menu-active .menu-btn__bar:first-of-type {
     -webkit-transform: rotate(34deg);
-    transform: rotate(38deg);
+    transform: rotate(34deg);
 }
 .menu-btn.is-menu-active .menu-btn__bar:nth-of-type(2) {
     opacity: 0;

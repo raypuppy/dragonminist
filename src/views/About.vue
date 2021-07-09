@@ -1,67 +1,36 @@
 <template>
-    <div class="main">
+    <div class="content">
       <div class="title bb">
-      故事簡介 Story
+      <h2>故事簡介 Story</h2>
       <hr width=80% size=0.5>
-      </div>
-      <div @click="openMenu" class="header__menu menu-btn" id="menu-btn">
-            <span class="menu-btn__bar"></span>
-            <span class="menu-btn__bar"></span>
-            <span class="menu-btn__bar"></span>
-      </div>
-      <div id="menuDiv" class="menu-non">
-        <nav class="menu-nav">
-          <ul class="menuul">
-            <router-link to="/about" ><li class="item">
-              <span class="label">故事簡介</span>
-              <span class="labelEn">Story</span>
-            </li></router-link>
-            <li class="item">
-              <span class="label">廣播劇聲演</span>
-              <span class="labelEn">Voice</span>
-            </li>
-            <li class="item">
-              <span class="label">商品情報</span>
-              <span class="labelEn">Product</span>
-            </li>
-            <li class="item">
-              <span class="label">預購活動</span>
-              <span class="labelEn">Pre-Sale</span>
-            </li>
-            <li class="item">
-              <span class="label">製作介紹</span>
-              <span class="labelEn">Staff</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <img width="150px" src="cover.jpg"/>
+      <p>   「臣近來聽聞城中一句流傳的段子。」</p>
+      <p>  「說來聽聽。」</p>
+      <p>  「當朝宰相溫良恭，良恭不良，風流宰相臥龍床。皇上夜夜要臣留宿宮中，臣的名聲都被敗壞了。」</p>
+      <p>  「愛卿不會在意這點流言蜚語吧。」</p>
+      <p>  「臣當然不在意，只是……就算是臣，也會挑人的啊。」</p>
+      <h3>古裝、喜劇、君臣</h3>
+    
+      <h3>小說原作/ami亞海</h3>
+        <p> 現已出版《風流宰相臥龍床》、《尋賊記》</p>
+      <p>線上試閱．購買實體書．<a href="http://moo.im/a/efCHLQ" target="_blank">購買電子書</a>．</p>     
+    </div>
   </div>
 </template>
-<script>
-import $ from 'jquery'
-export default {
-  data(){
-    return{
-
-    }
-  },
-  methods: {
-    openMenu () {
-       $('.transform').toggleClass('menuActive');
-       if($(".menu-btn").hasClass("is-menu-active")){
-         $(".menu-btn").removeClass("is-menu-active");
-         $("#menuDiv").removeClass('menuActive');
-         $("#menuDiv").addClass('menu-non');
-      }else{
-         $(".menu-btn").addClass("is-menu-active");
-
-         $("#menuDiv").addClass('menuActive');
-         $("#menuDiv").removeClass('menu-non');
-      }
-    },
-  }
-}
-</script>
 <style >
- .bb{font-weight: bold;}
+.content{
+  background-color:rgb(255 255 255 / 80%);;
+  width:400px;
+  height: 100%;
+  overflow:auto;
+  padding:30px
+}
+.content h2{color:#580505;}
+.content h3{color:#000;}
+.content p{
+  font-family: 'Noto Serif TC',sans-serif;
+  font-weight: 400;
+  color:#000;
+}
+.content p a{ color:#580505;text-decoration: none;}
 </style>
