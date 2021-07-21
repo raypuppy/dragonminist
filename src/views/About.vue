@@ -20,10 +20,9 @@
 <style >
 .content{
   background-color:rgb(255 255 255 / 80%);;
-  width:400px;
-  height: 100%;
-  overflow:auto;
-  padding:30px
+  width:80%;
+  overflow: scroll;
+  padding-top:200px;
 }
 .content h2{color:#580505;}
 .content h3{color:#000;}

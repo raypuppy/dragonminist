@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+      <div class="TopContent">
       <div class="title shining">
           風<br>流<br>宰<br>相<br>臥<br>龍<br>床
       </div>
@@ -10,8 +11,7 @@
         <p class="alt">廣播劇</p>
         <p class="alt">Coming Soon</p>
       </div>
-     
-    
+     </div>
   </div>
 </template>
 
@@ -45,55 +45,8 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;900&display=swap');
 
-.menuActive{
- visibility: visible;
-}
-.menu-non{
- visibility: hidden;
-}
-#menuDiv{
-  background-color:#96514d;
-  width:100%;
-  height: 100%;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index: 9;
-  padding-top: 8.69565vw;
-}
-.menu-nav{
-  width: 100%;
-  position: fixed;
-}
-.menuul{
-  font-family: 'Noto Serif TC',sans-serif;
-  font-weight: 400;
-  font-size:1.2em;
-  position: relative;
-  list-style: none;
-  padding: 0px;
-}
-.menuul li{
-  position: relative;
-  margin-top: 25px;
-  color:#fff;
-  transition: color 0.5s ease;
-}
-.menuul a{ text-decoration:none;}
-.menuul li:hover{
-  color:#deb068;
-}
-.menuul .label{
-  display: block;
-}
-.menuul .labelEn{
-  display: block;
-  font-size:0.6em;
-  color:#333;
-}
-.main {
-    position: fixed;
-    top: 0;
+.TopContent{
+   top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -108,68 +61,6 @@ export default {
     text-align: center;
     display: flex;
     height: 100vh;
-  }
-.header__menu{
-    position: absolute;
-    right: 0px;
-    top:0px;
-    margin:10px;
-    z-index: 999;
-}
-.menu-btn {
-    position:absolute;
-    top:0px;
-    right:0px;
-    display: inline-block;
-    margin-bottom: 4px;
-    width: 25px;
-    height: 15px;
-    z-index: 2;
-    cursor: pointer;
-    z-index:999;
-}
-.menu-btn__bar {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    -webkit-transition-duration: .4s;
-    transition-duration: .4s;
-}
-.menu-btn__bar:first-of-type {
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-}
-.menu-btn__bar:nth-of-type(2) {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.menu-btn__bar:nth-of-type(3) {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-}
-.menu-btn.is-menu-active .menu-btn__bar:first-of-type {
-    -webkit-transform: rotate(34deg);
-    transform: rotate(34deg);
-}
-.menu-btn.is-menu-active .menu-btn__bar:nth-of-type(2) {
-    opacity: 0;
-}
-.menu-btn.is-menu-active .menu-btn__bar:nth-of-type(3) {
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
 }
 .title{
   color:#fff;
