@@ -70,8 +70,8 @@ export default {
   font-family: 'Noto Serif TC',sans-serif;
   font-weight: 400;
   color:#deb068;
-  animation: display 5s linear ;
-  animation-delay: 3s;
+  animation: display 2s linear ;
+  animation-delay: 0.5s;
   opacity: 0;
   -webkit-animation-fill-mode:forwards;  /* 確保在動畫完成後，我們會保持在最後的 keyframe 值 (opacity: 1)*/
  -moz-animation-fill-mode:forwards;
@@ -104,8 +104,8 @@ export default {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-   animation: shining 3s linear ;
-   animation-delay: 1s;
+   animation: shining 2s linear ;
+   animation-delay: 0.5s;
 }
 
 @keyframes shining {

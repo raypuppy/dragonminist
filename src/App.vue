@@ -8,6 +8,10 @@
      <div id="menuDiv" class="menu-non">
         <nav class="menu-nav" >
           <ul class="menuul">
+              <router-link to="/news" ><li @click="openMenu" class="item">
+              <span class="label">最新情報</span>
+              <span class="labelEn">News</span>
+            </li></router-link>
             <router-link to="/about" ><li @click="openMenu" class="item">
               <span class="label">故事簡介</span>
               <span class="labelEn">Story</span>
@@ -15,10 +19,6 @@
             <router-link to="/voice" ><li @click="openMenu" class="item"> 
               <span class="label">廣播劇聲演</span>
               <span class="labelEn">Voice</span>
-            </li></router-link>
-            <router-link to="/product" ><li class="item" @click="openMenu">
-              <span class="label">商品情報</span>
-              <span class="labelEn">Product</span>
             </li></router-link>
              <router-link to="/presale" > <li class="item" @click="openMenu">
               <span class="label">預購活動</span>
@@ -36,6 +36,7 @@
 </template>
 <script>
 import $ from 'jquery'
+
 export default {
   data(){
     return{
@@ -46,13 +47,17 @@ export default {
     openMenu () {
        console.log(document.body.clientWidth);
        $('.transform').toggleClass('menuActive');
-       if($(".menu-btn").hasClass("is-menu-active")){
+      if($(".menu-btn").hasClass("is-menu-active")){
+      //  console.log('close');
+          $(".content").css('display','block')
          $(".menu-btn").removeClass("is-menu-active");
          $("#menuDiv").removeClass('menuActive');
          if(document.body.clientWidth<600){
             $("#menuDiv").addClass('menu-non');
           }
       }else{
+          // console.log('open');
+          $(".content").css('display','none')
          $(".menu-btn").addClass("is-menu-active");
          $("#menuDiv").addClass('menuActive');
           if(document.body.clientWidth<600){
@@ -66,6 +71,7 @@ export default {
 }
 </script>
 <style >
+@import url('../src/css/style.css');
 html {
             height: 100%;
         }
@@ -76,6 +82,9 @@ html {
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
+}
+#app{
+  padding-top: 50px;
 }
 .menuActive{
  visibility: visible;
@@ -107,10 +116,10 @@ html {
   padding: 0px;
 }
 .menuul li{
-  margin-left:30px;
   color:#fff;
   transition: color 0.5s ease;
   position: relative;
+  margin-right: 30px;
 }
 .menuul li:hover::before{
   content: '閱';
@@ -155,7 +164,7 @@ html {
 }
 .menu-btn {
     visibility: hidden;
-    position:absolute;
+    position:fixed;
     top:0px;
     right:0px;
     display: inline-block;
@@ -171,7 +180,7 @@ html {
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: #580505;
     -webkit-transition-duration: .4s;
     transition-duration: .4s;
 }
@@ -255,6 +264,7 @@ html {
   }
   .menuul li{
     margin-top: 50px;
+     margin-right: 0px;
   }
 }
 </style>
