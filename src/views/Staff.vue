@@ -4,6 +4,8 @@
        <h2>製作介紹 Staff</h2>
       <hr width=80% size=0.5>
       </div>
+       <h3>原作</h3>
+         <p><a href="https://raypuppy.com" target="_blank"><span class="cast">ami亞海</span></a></p>
       <h3>廣播劇製作</h3>
         <p>  <a href="https://www.facebook.com/voiceinfinity18" target="_blank"><span class="cast">聲音無限 Voice Infinity</span></a></p>
          <p><a href="https://www.facebook.com/voiceinfinity18" target="_blank"><img width="200px" src="@/assets/vi.png"/></a></p>
@@ -22,7 +24,7 @@ BL/GL/BG廣播劇、有聲漫畫、各類有聲作品是我們心之所向。</p
         <h3>發行</h3>
         <p><a href="https://www.facebook.com/voiceinfinity18" target="_blank"><span class="cast">聲音無限 Voice Infinity</span></a></p>
        <p><a href="https://www.facebook.com/loosiongstudio" target="_blank"><span class="cast">陌上商行</span></a></p>
-       
+        <p><a href="https://www.facebook.com/EshenVoice" target="_blank"><span class="cast">藝昇國際（聲優事務所）</span></a></p>
        <h3>販售/商品規劃設計</h3>
         <p><a href="https://www.facebook.com/loosiongstudio" target="_blank"><img width="200px" src="@/assets/loosiong.png"/></a></p>
        <p><a href="https://www.facebook.com/loosiongstudio" target="_blank"><span class="cast">陌上商行</span></a></p>
@@ -33,7 +35,8 @@ BL/GL/BG廣播劇、有聲漫畫、各類有聲作品是我們心之所向。</p
        <h3>主題曲製作</h3>
          <p><a href="https://www.facebook.com/SQSXStudio" target="_blank"><img width="200px" src="@/assets/shang.png"/></a></p>
          <p><a href="https://www.facebook.com/SQSXStudio" target="_blank"><span class="cast">山清水秀</span></a></p>
-       
+         <h3>特設網站製作</h3>
+         <p><a href="https://raypuppy.com" target="_blank"><span class="cast">ami亞海</span></a></p>
   </div>
 </template>
 <style scoped>
