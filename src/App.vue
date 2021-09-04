@@ -179,8 +179,8 @@ html {
     position: absolute;
     display: inline-block;
     width: 100%;
-    height: 1px;
-    background-color: #580505;
+    height: 2px;
+    background-color: #fff;
     -webkit-transition-duration: .4s;
     transition-duration: .4s;
 }

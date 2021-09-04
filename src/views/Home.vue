@@ -68,7 +68,7 @@ export default {
 }
 .display{
   font-family: 'Noto Serif TC',sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   color:#deb068;
   animation: display 2s linear ;
   animation-delay: 0.5s;
