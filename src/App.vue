@@ -240,6 +240,7 @@ html {
   color: #42b983;
 }
 @media  (max-width: 600px)  {
+  .menuul li:hover::before{visibility: hidden;}
   .menu-btn{visibility:visible;}
    #menuDiv{width:100%;}
   .menu-nav{width: 100%;}
