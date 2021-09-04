@@ -22,7 +22,7 @@
             </li></router-link>
              <router-link to="/presale" > <li class="item" @click="openMenu">
               <span class="label">預購活動</span>
-              <span class="labelEn">Pre-Sale</span>
+              <span class="labelEn">Pre-Order</span>
             </li></router-link>
              <router-link to="/staff" ><li class="item" @click="openMenu">
               <span class="label">製作介紹</span>
